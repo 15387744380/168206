@@ -5,6 +5,11 @@ Created on Fri Dec 14 10:17:46 2018
 @author: Admin
 """
 
+Created on Sun Dec 23 19:45:12 2018
+
+@author: 刘莹莹
+"""
+
 start='hit' 
 
 
@@ -17,7 +22,7 @@ adict=['hot','dot','dog','lot','log']
 
 
  
-def find_(start,end,bath): 
+def find_(start,end,path): 
 
 
  
@@ -25,7 +30,7 @@ def find_(start,end,bath):
 
 
  
-        return 'start==end' 
+        return 'start=end' 
 
 
  
@@ -60,7 +65,7 @@ def find_(start,end,bath):
                     newst=word[:i]+n+word[i+1:] 
 
  
-                    if newst in bath and newst not in visited: 
+                    if newst in path and newst not in visited: 
 
 
  
@@ -77,6 +82,9 @@ def find_(start,end,bath):
 
  
                         print("find: "+newst) 
+                        
+                        print("The path is: ")
+                        print(visited)
 
 
  
@@ -85,3 +93,4 @@ def find_(start,end,bath):
 
  
 find_(start,end,adict)
+              
